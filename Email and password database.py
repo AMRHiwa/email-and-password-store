@@ -44,19 +44,29 @@ def get_email_password():
 # connecting to my database
 cnx = connect(user='root', password='44527077'
             , host='127.0.0.1', database='python_db')
+
+# create a cursor for our database
 cursur = cnx.cursor()
 
 # create table for sign_in information
 cursur.execute('CREATE TABLE sign_in (username VARCHAR(255), password VARCHAR(128))')
+
+# commit the all change
 cnx.commit()
 
+# getting email and password from user by our function
 email, password = get_email_password()
 
-# adding information
+# adding information to our DataBase
 cursur.execute(f"INSERT INTO sign_in VALUE (\'{email}\', \'{password}\')")
+
+# commit the all change
 cnx.commit()
+
+# showing message for user
 print('Done!')
 
+# close the cursor and database in our program
 cnx.close()
 
 
