@@ -41,7 +41,7 @@ and including three function:
 
 + <a href="#valid_email">valid_email</a>
 + <a href="#email_password">get_email_password</a>
-+ <a href="#">main</a>
++ <a href="#main">main</a>
 
 <h3>Modules</h3>
 
