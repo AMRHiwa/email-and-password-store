@@ -1,9 +1,9 @@
 # email-and-password-store
 In this project, an attempt has been made to receive and store users' emails and passwords in the mysql database with python
 
-<img src='screenshot/program.png' alt="program screen" width=80%>
+<img src='screenshot/program.png' id='picture1' alt="program screen" width=80%>
 
-<img src='screenshot/database.png' alt="Database screen" width=50%>
+<img src='screenshot/database.png' alt="Database screen" id='picture2' width=50%>
 
 This program is produced in a file that you can see in the repository:
 
@@ -23,7 +23,10 @@ so Enter below command in your Terminal or Command Promt (cmd):
 
 > `pip install mysql-connector-python`
 
-<font color="red"> Another Note: </font>
+<font color="red"> Another Point: </font>
 
-for using this program you must change your <font color='green'>"DataBase_name"</font> , <font color='green'>"User_name</font>, <font color='green'>"Password"</font> with your information in line <font color='green'>45</font>.
++ for using this program you must change your <font color='green'>"DataBase_name"</font> , <font color='green'>"User_name</font>, <font color='green'>"Password"</font> with your information in line <font color='green'>45</font>.
 
+after all of this points, you can run the program and can see the "Enter your Email: " then see "Enter your password: " in terminal. <a href="#picture1">(like picture one)</a>
+
+after you entered the email and password, the information saved in database and you can access them by mysql database.<a href="#picture2">(like picture two)</a>
