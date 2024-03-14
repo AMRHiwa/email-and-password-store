@@ -30,3 +30,34 @@ so Enter below command in your Terminal or Command Promt (cmd):
 after all of this points, you can run the program and can see the "Enter your Email: " then see "Enter your password: " in terminal. <a href="#picture1">(like picture one)</a>
 
 after you entered the email and password, the information saved in database and you can access them by mysql database.<a href="#picture2">(like picture two)</a>
+
+<h2 id='structure'>Program structure</h2>
+
+It use two module:
++ <a href="#re">re</a>
++ <a href="#mysql">mysql-connector</a>
+
+and including three function:
+
++ <a href="#valid_email">valid_email</a>
++ <a href="#email_password">get_email_password</a>
++ <a href="#">main</a>
+
+<h3>Modules</h3>
+
+<h4 id="re">re module:</h4>
+...
+
+<h4 id="mysql">mysql-connector module:</h4>
+...
+
+<h3>Fucntions</h3>
+
+<h4 id="valid_email">valid_email:</h4>
+...
+
+<h4 id="email_password">getting_email_password:</h4>
+...
+
+<h4 id="main">main:</h4>
+...
