@@ -40,34 +40,37 @@ def get_email_password():
     # the valid email and password to main program
     return email, password
 
+# define the main function
+def main():
 
-# connecting to my database
-cnx = connect(user='root', password='44527077'
-            , host='127.0.0.1', database='python_db')
+    # connecting to my database
+    cnx = connect(user='root', password='44527077'
+                , host='127.0.0.1', database='python_db')
 
-# create a cursor for our database
-cursur = cnx.cursor()
+    # create a cursor for our database
+    cursur = cnx.cursor()
 
-# create table for sign_in information
-cursur.execute('CREATE TABLE sign_in (username VARCHAR(255), password VARCHAR(128))')
+    # create table for sign_in information
+    cursur.execute('CREATE TABLE sign_in (username VARCHAR(255), password VARCHAR(128))')
 
-# commit the all change
-cnx.commit()
+    # commit the all change
+    cnx.commit()
 
-# getting email and password from user by our function
-email, password = get_email_password()
+    # getting email and password from user by our function
+    email, password = get_email_password()
 
-# adding information to our DataBase
-cursur.execute(f"INSERT INTO sign_in VALUE (\'{email}\', \'{password}\')")
+    # adding information to our DataBase
+    cursur.execute(f"INSERT INTO sign_in VALUE (\'{email}\', \'{password}\')")
 
-# commit the all change
-cnx.commit()
+    # commit the all change
+    cnx.commit()
 
-# showing message for user
-print('Done!')
+    # showing message for user
+    print('Done!')
 
-# close the cursor and database in our program
-cnx.close()
+    # close the cursor and database in our program
+    cnx.close()
 
-
+if __name__ == "__main__":
+    main()
 
