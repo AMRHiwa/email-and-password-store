@@ -11,7 +11,9 @@ In the menu below, we have put a list of contents for you.
 
 <h2 id='guide'>Program Guide</h2>
 
-for using this program, you must download mysql-connctor-python module.
+for using this program, you must have mysql DataBase on your system and download mysql-connctor-python module.
+
+for guide to install and download mysql DataBase on your system you can <a href='https://www.w3schools.com/mysql/mysql_install_windows.asp'>Click Here!.</a>
 
 so Enter below command in your Terminal or Command Promt (cmd):
 
