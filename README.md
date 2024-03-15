@@ -11,7 +11,7 @@ In the menu below, we have put a list of contents for you.
 
 ## Menu
 + <a href="#guide">Program guide</a>
-+ <a href="#">Program structure</a>
++ <a href="#structure">Program structure</a>
 
 <h2 id='guide'>Program Guide</h2>
 
@@ -46,18 +46,18 @@ and including three function:
 <h3>Modules</h3>
 
 <h4 id="re">re module:</h4>
-...
+this is a module for using regex in python programs.
 
 <h4 id="mysql">mysql-connector module:</h4>
-...
+This module is used for the use of MySQL capabilities in Python.
 
 <h3>Fucntions</h3>
 
 <h4 id="valid_email">valid_email:</h4>
-...
+This function is used to check the validity of an email based on the formatting we provide with our Regex.
 
 <h4 id="email_password">getting_email_password:</h4>
-...
+In this function, we will notify the user several messages to enter their email and password, in which case the email is sent to the Valid_email function to review the validity.
 
 <h4 id="main">main:</h4>
-...
+In this function we receive the call for the previous email functions and passwords, then save it to the database using the MySQL-Connector module.
